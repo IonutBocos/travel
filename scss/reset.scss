@@ -1,0 +1,21 @@
+ol,
+ul {
+  list-style-type: none;
+}
+
+ol,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
