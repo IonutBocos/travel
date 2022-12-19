@@ -25,11 +25,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
   >
 
-
+  <!-- css -->
   <link
     rel="stylesheet"
     href="./scss/style.css"
   />
+
+  <!-- fontanelo -->
   <link
     rel="stylesheet"
     href="./css/fontanelo/css/fontello.css"
@@ -40,11 +42,12 @@
 
 <body>
   <header>
+    <!-- header top start -->
     <section class="container">
       <div class="header-top">
         <h1 class="header-logo">Logo</h1>
 
-        <nav class="header-nav">
+        <nav class="header-nav ">
           <ul class="nav-menu">
             <li class="">
               <a
@@ -70,16 +73,15 @@
                 <a
                   href="/"
                   title="Submenu item 1"
-                >Submenu item 1</a>
+                >Submenu item 2</a>
                 <a
                   href="/"
                   title="Submenu item 1"
-                >Submenu item 1</a>
+                >Submenu item 3</a>
               </div>
               <a
                 href="/"
                 title="Destinatii interne"
-                class="row-sm-6"
               ></a>
             </li>
 
@@ -93,17 +95,15 @@
 
             <li class="">
               <a
-                href=""
+                href="/"
                 title="Oferte speciale"
-                class=""
               >Oferte speciale</a>
             </li>
 
             <li class="">
               <a
-                href="#"
+                href="/"
                 title="Bilete de avion"
-                class="col-sm-2"
               >Bilete de avion</a>
             </li>
 
@@ -111,39 +111,29 @@
               <a
                 href="#"
                 title="Contact"
-                class="col-sm-2"
               >Contact</a>
             </li>
           </ul>
+        </nav>
       </div>
-      </nav>
     </section>
+    <!-- header top end -->
 
+
+    <!-- header bottom start -->
     <div class="header-bottom ">
-
-      <!-- carousel -->
-
-
       <div
         class="owl-carousel owl-theme"
         id="owl-carousel"
       >
       </div>
-
-
-
+      <!-- header bottom start -->
   </header>
 
-
-
-
-  </div>
-  </div>
-
-  </div>
-  </div>
-
+  <!-- content main start -->
   <main class="content-main">
+
+    <!-- content banner start -->
     <section class=" content-banner text-center">
       <div class="container d-flex flex-column justify-content-between">
         <div class="world-icon">
@@ -166,8 +156,6 @@
               <i class="icon-star-filled"></i>Vezi <span>ofertele!</span>
             </button>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -203,14 +191,12 @@
         </div>
 
         <div class="video-button text-center">
-          <i>X</i>
+          <i class="icon-play-circled"></i>
 
           <h1>Vezi <span>clipul</span></h1>
         </div>
       </div>
     </section>
-
-
 
     <!-- newsletter start -->
     <section class=" newsletter  text-center">
@@ -223,8 +209,6 @@
           <h1 class="newsletter-title text-uppercase">
             Nautati & <span>Articole</span>
           </h1>
-
-
         </div>
 
 
@@ -253,9 +237,6 @@
                 >Citeste mai mult >></a>
               </div>
             </div>
-
-
-
           </article>
 
           <article class="newsletter-article row justify-content-center col-lg-6 ">
@@ -282,12 +263,9 @@
                 >Citeste mai mult >></a>
               </div>
             </div>
-
-
-
           </article>
-        </div>
 
+        </div>
         <div class="articles-section row justify-content-center ">
           <article class="newsletter-article row justify-content-center col-lg-6 ">
             <div class="article-image ">
@@ -313,9 +291,6 @@
                 >Citeste mai mult >></a>
               </div>
             </div>
-
-
-
           </article>
 
           <article class="newsletter-article row justify-content-center col-lg-6 ">
@@ -356,7 +331,7 @@
     </section>
   </main>
 
-
+  <!-- footer start -->
   <footer>
     <section class="footer-top">
       <div class="title-form container">
@@ -384,6 +359,7 @@
               type="text"
               name="destinatie"
               placeholder="turism intern"
+              required
             ></input>
           </div>
 
@@ -504,6 +480,7 @@
       </ul>
     </section>
   </footer>
+  <!-- footer start -->
 
 
 
@@ -513,7 +490,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <script src="./js/app.js"></script>
-  <script src="./js/formValidation.js"></script>
 </body>
 
 </html>

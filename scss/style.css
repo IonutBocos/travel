@@ -7852,13 +7852,12 @@ a:hover {
   padding: 0;
   margin: 0;
   font-family: "Raleway";
-  /* The container <div> - needed to position the dropdown content */
+  /* The container <> - needed to position the dropdown content */
   /* Dropdown Content (Hidden by Default) */
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 }
 * .container {
   max-width: 1218px;
-  padding: 0;
 }
 * .dropdown {
   position: relative;
@@ -7897,7 +7896,9 @@ a:hover {
 }
 * .header-top .nav-menu {
   display: flex;
+  flex-direction: column;
   gap: 15px;
+  text-align: center;
 }
 * .header-top .nav-menu li a {
   width: 100%;
@@ -7906,12 +7907,13 @@ a:hover {
 * .header-top .nav-menu li:hover {
   color: #ed1c24;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   * .header-top .nav-menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 45px;
-    text-align: center;
+    gap: 30px;
+    text-align: unset;
   }
 }
 @media (min-width: 992px) {
@@ -7969,7 +7971,7 @@ a:hover {
   max-width: 1180px;
   transform: translateY(0%);
   display: flex;
-  justify-content: start;
+  justify-content: end;
   margin: 0;
   max-width: 1280px;
 }
@@ -8047,6 +8049,12 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
 }
+.owl-carousel .item .carousel-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
 .owl-carousel .item .carousel-text button {
   color: #ffffff;
   font-size: 18px;
@@ -8057,9 +8065,6 @@ a:hover {
   height: 56px;
   background-color: #ed1c24;
   border-radius: 5px;
-}
-.owl-carousel .item .carousel-text button a {
-  padding: 18px 65px;
 }
 .owl-carousel .item .carousel-text button:hover {
   background-color: #000000;
